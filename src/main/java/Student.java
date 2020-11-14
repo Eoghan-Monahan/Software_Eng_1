@@ -115,5 +115,8 @@ public class Student {
         this.courses = courses;
     }
 
-
+    @Override
+    public String toString() {
+        return this.getName() + ", " + this.getUsername() + " Courses: " + this.getCourses() + " Modules: " + this.getModules();
+    }
 }

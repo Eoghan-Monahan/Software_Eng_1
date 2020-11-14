@@ -60,5 +60,15 @@ public class Course {
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
     }
+
+    @Override
+    public String toString() {
+        String moduleNames = "";
+        ArrayList<Module> moduleList = this.getModules();
+        for (Module m : moduleList) {
+            moduleNames = moduleNames + m.getName() + " " + m.getId() + ", ";
+        }
+        return this.getName() + " Modules: " + moduleNames;
+    }
 }
 
