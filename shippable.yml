@@ -20,8 +20,6 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
 
-    - mvn clean cobertura:cobertura
-
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
 integrations:
