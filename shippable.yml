@@ -13,7 +13,7 @@ build:
   ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
-    - maven install 
+    - mvn install 
 
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
