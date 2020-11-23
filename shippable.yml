@@ -2,7 +2,7 @@
 language: java
 
 jdk:
-   - openjdk11
+   - openjdk8
 # use this to control what branches get built.
 # http://docs.shippable.com/ci/advancedOptions/branches/
 branches:
@@ -16,6 +16,7 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - mvn verify
+    - mvn clean cobertura:cobertura
 
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
