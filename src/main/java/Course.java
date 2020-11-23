@@ -68,7 +68,7 @@ public class Course {
         for (Module m : moduleList) {
             moduleNames = moduleNames + m.getName() + " " + m.getId() + ", ";
         }
-        return "Course Name: " + this.getName() + " [Associated Modules: " + moduleNames + "]\t";
+        return "Course Name: " + this.getName() + " [Associated Modules: " + moduleNames + "]\n";
     }
 }
 
